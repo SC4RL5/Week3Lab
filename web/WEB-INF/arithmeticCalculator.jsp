@@ -13,6 +13,15 @@
     </head>
     <body>
         <h1>Arithmetic Calculator</h1>
-        <a href="age">Arithmetic Calculator</a>
+        <form method="post" action="arithmetic">
+            First: <input type="text" name="first" value="${first}"><br>
+            Second: <input type="text" name="second" value="${second}"><br>
+            <input type="submit" name="+" value="+">
+            <input type="submit" name="-" value="-">
+            <input type="submit" name="*" value="*">
+            <input type="submit" name="%" value="%">
+        </form>
+        <p>Result: ${result}</p>
+        <a href="age">Age Calculator</a>
     </body>
 </html>
